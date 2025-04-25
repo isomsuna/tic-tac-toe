@@ -26,7 +26,7 @@ def print_board():
 
 # checks if move is valid
 def check_valid_move(move):
-    if board[move[0]][move[1]] == 'X' or board[move[0]][move[1]] == 'O':
+    if board[move[0]][move[1]] in ['X', 'O']:
         return False
     return True
 
